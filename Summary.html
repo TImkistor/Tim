@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="video/vagner.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div style="max-width: 100%; overflow: auto; text-align: center"> 
+    <div style="box-shadow: 0 0 15px rgba(0,0,0,0.3); padding: 40px; border: 1px solid #e1e1e1; display: inline-block; margin: 20px; overflow: hidden;">
+
+
+<style>
+    .preview_inner {
+        font-family: 'Andika', sans-serif;
+        font-size: 14px;
+        width: 680px;
+        color: #000000 !important;
+        text-align: left;
+        line-height: 1.4;
+        position: relative;
+        background-image: linear-gradient(to right, #f8f8f8 0%, #f8f8f8 230px, #ffffff 230px);
+        word-wrap: break-word;
+    }
+
+    .preview_inner b {
+        color: #000 !important;
+    }
+
+    .preview_inner p {
+        margin: 0 0 0.5em 0;
+    }
+
+    .preview_inner img {
+        vertical-align: middle;
+    }
+
+    .grey-text {
+        color: #666666;
+    }
+
+    .template-left-column {
+        position: relative;
+        float: left;
+        width: 170px;
+        padding: 30px;
+        box-sizing: content-box;
+    }
+
+    .section-avatar {
+        margin-bottom: 10px;
+    }
+
+    .fio-text {
+        color: #39739b;
+        font-size: 23px;
+        line-height: 1.2;
+    }
+
+    .position-text {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .template-left-column_section {
+        margin-top: 20px;
+    }
+
+    .city-text {
+        color: #39739b;
+        font-size: 18px;
+    }
+
+    .template-right-column {
+        float: left;
+        width: 430px;
+        padding: 20px 0 20px 19px;
+        box-sizing: content-box;
+    }
+
+
+    .section_header {
+        line-height: 26px;
+        margin: 0 0 1em 0;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .preview_inner .section_header-icon {
+        width: 26px;
+        vertical-align: sub !important;
+    }
+
+    .section_inner {
+        /*padding: 0 30px;*/
+    }
+
+    .section_divider {
+        border-top: 1px solid #ebebeb;
+        margin: 20px 0;
+    }
+
+    .section_row {
+        margin-bottom: 10px;
+    }
+
+    .section_left {
+        float: left;
+        width: 100px;
+        padding-right: 20px;
+        font-size: 14px;
+        color: #666666;
+        font-weight: normal;
+        box-sizing: content-box;
+    }
+
+    .section_right {
+        float: left;
+        width: 310px;
+        font-size: 14px;
+        color: #000000;
+        font-weight: normal;
+    }
+
+    .avatar_background {
+        display: none;
+        width: 100%;
+        border-radius: 100%;
+        padding-bottom: 100%;
+    }
+
+    .avatar_image img {
+        width: 100%;
+        border-radius: 100%;
+    }
+
+    .phone-icons {
+        width: 16px;
+        vertical-align: middle;
+    }
+
+    .pdf-layout .preview_inner {
+        background-image: linear-gradient(to left, #f8f8f8 0%, #f8f8f8 230px, #ffffff 230px);
+    }
+    .pdf-layout .preview_inner img {
+        vertical-align: top;
+    }
+
+    .pdf-layout .avatar_background {
+        display: block;
+    }
+
+    .pdf-layout .avatar_image {
+        display: none;
+        visibility: hidden;
+    }
+
+    .pdf-layout .section_header {
+        /*vertical-align: middle;*/
+        /*line-height: 14px;*/
+    }
+</style>
+
+<div class="preview_inner noselect" unselectable="on">
+    <div class="template-left-column">
+        <div class="template-left-column-shadow"></div>
+        <div class="section-avatar">
+            <div class="avatar_image">
+                <img src="https://rezume.me/static/upload/avatars/f/f/ffYI97upatxwe3h1.jpeg">
+            </div>
+            <div class="avatar_background" style="background: url('https://rezume.me/static/upload/avatars/f/f/ffYI97upatxwe3h1.jpeg') no-repeat center; background-size: contain; "></div>
+        </div>
+        <div class="fio-text">
+            Кислов            Тимур            Артурович        </div>
+        <div class="position-text">
+            Пентестеры        </div>
+
+        <div class="template-left-column_section">
+                            <div class="city-text">
+                    Москва                </div>
+                        <div class="grey-text">
+                Переезд невозможен            </div>
+        </div>
+
+        <div class="template-left-column_section" style="font-size: 15px;">
+            <p style="margin: 0;">
+                                                    <img src="https://rezume.me/static/img/i_whatsapp.svg" class="phone-icons">&nbsp;&nbsp;
+                                                    <img src="https://rezume.me/static/img/i_telegram.svg" class="phone-icons">&nbsp;&nbsp;
+                            </p><p>
+                +7(966)359-58-39            </p>
+            <div>
+                <img src="https://rezume.me/static/img/i_mail_orange.svg">&nbsp; tim.kisslove@gmail.com            </div>
+        </div>
+
+                <div class="template-left-column_section" style="font-size: 16px;">
+            18 лет, холост, детей нет        </div>
+        <div class="template-left-column_section">
+            <p>
+                <span class="grey-text">Желаемая зарплата:</span><br>
+                Не указана                            </p>
+            <p>
+                <span class="grey-text">Готовность к командировкам:</span>
+                Нет            </p>
+            <p>
+                <span class="grey-text">Занятость:</span>
+                Стажировка            </p>
+            <p>
+                <span class="grey-text">График работы:</span>
+                Гибкий график            </p>
+            <p>
+                <span class="grey-text">Гражданство:</span>
+                Россия            </p>
+                                        <p>
+                    <span class="grey-text">Языки:</span>
+                    Русский(родной), Англиский(A2)                </p>
+                                    <p>
+                <span class="grey-text"></span>
+            </p>
+        </div>
+    </div>
+    <div class="template-right-column">
+
+        
+                                <div class="section_inner">
+                <div class="section_header">
+                    <img class="section_header-icon" style="vertical-align: middle; margin-right: 8px" src="https://rezume.me/static/img/i_education_orange.svg">
+                    ОБРАЗОВАНИЕ
+                </div>
+            </div>
+                                            <div class="section_inner">
+                    <div class="section_row">
+                        <div class="section_left">
+                                                    </div>
+                        <div class="section_right">
+                            Московский приборостроительный техникум ФГБОУ во РЭУ ИМ. Г.В. ПЛЕХАНОВ                                                            <br>Обеспечение информационной безопасности автоматизированных систем                                                                                     <br>Очная                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            
+        
+                                    <div class="section_divider"></div>
+                        <div class="section_inner">
+                <div class="section_header">
+                    <img class="section_header-icon" style="vertical-align: middle; margin-right: 8px" src="https://rezume.me/static/img/i_extended_orange.svg">
+                    ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ
+                </div>
+            </div>
+                <div class="section_inner">
+                    - хорошие знания языка C#(более 1 года)<br>
+- понимание принципа архитектуры ООП.<br>
+- умения пользоваться Терминалом(Linux) , Powershell и CMD, Termux(IOS)<br>
+- использование различных инструментов для определенной задачи внедрения или сбора информации.<br>
+- умение пользоваться облачными сервисами Git.<br>
+- умения пользоваться базами данных(MySQL)<br>
+- умения пользоваться  сетевыми протоколами (например SSH)<br>
+<br>
+P.S Я выделил лишь те пункты  с которыми я часто практикую                                            <p></p>
+                        <p>
+                            Ссылки:
+                            <a href="https://github.com/TImkistor" rel="nofollow" target="_blank">https://github.com/TImkistor</a>                        </p>
+                                    </div>
+
+            </div>
+
+    <div style="clear: both;"></div>
+
+
+</div>
+
+                    <div class="visible-print-block" style="position: absolute; top:0; left:0; width: 100%;
+font-size: 120px;
+text-align: center;
+font-weight: bold;
+opacity: 0.3;
+padding-top: 110px;">
+                
+            </div>
+                        </div>
+</div>
+
+    <div class="text-center">
+                    </div>
+
+<p>&nbsp;</p>
+</script>
+
+</body>
+</html>
+
+
+
