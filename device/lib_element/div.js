@@ -10,4 +10,10 @@ export default class DIV {
     appendTo(parentElement) {
       parentElement.appendChild(this.element);
     }
+
+    animationShadow(mouse,boxShadow){
+      this.element.addEventListener(mouse,() => {
+       this.element.style.boxShadow  = boxShadow
+      });
+    }
   }

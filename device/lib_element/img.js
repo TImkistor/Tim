@@ -10,4 +10,41 @@ export default class IMG {
     appendTo(parentElement) {
       parentElement.appendChild(this.element);
     }
+
+    animationAdvent(speed){
+       this.element.style.opacity = 0
+       let opacity = 0;
+       const fadeIn = () =>{
+        opacity += 0.01
+        this.element.style.opacity = opacity
+        if (opacity < 1){
+          requestAnimationFrame(fadeIn)
+        }
+       }
+       setTimeout(fadeIn,speed)
+    }
+
+    animationRadius(mouse,radius,rotate,side){
+     let currentRotation = rotate
+     let rotationIncrement = 0
+
+     if (side === "right"){
+      rotationIncrement = 1
+     }
+     else{
+      rotationIncrement = -1;
+     }
+
+     const rotateImage = () =>{
+      this.element.style.transform = `rotate(${currentRotation}deg)`
+      currentRotation = rotationIncrement;
+      if (currentRotation < radius){
+        requestAnimationFrame(rotateImage);
+      }
+     }
+
+     this.element.addEventListener(mouse, ()=>{
+     rotateImage()
+     })
+    }
   }
