@@ -1,5 +1,5 @@
 export default class H1 {
-    constructor(id,innerText,color,textAlign) {
+    constructor(id, innerText, color, textAlign) {
       this.element = document.createElement('h1');
       this.element.id = id
       this.element.innerText = innerText;
@@ -10,28 +10,29 @@ export default class H1 {
     appendTo(parentElement) {
       parentElement.appendChild(this.element);
     }
-    animationShiftText(speed){
-       const text = this.element.innerText;
-       this.element.innerText = '';
-       
-       let index = 0;
-       const interval = setInterval(()=>{
-        if (index < text.length){
+  
+    animationShiftText(speed) {
+      const text = this.element.innerText;
+      this.element.innerText = '';
+  
+      let index = 0;
+      return new Promise((resolve) => {
+        const interval = setInterval(() => {
+          if (index < text.length) {
             const char = text.charAt(index);
-            if (char === ' '){
-                this.element.innerHTML += '<span>&nbsp;</span>'
-            }
-            else if (char === '^'){
-                this.element.innerHTML += '<br>'
-            }
-            else{
-                this.element.innerText += char
+            if (char === ' ') {
+              this.element.innerHTML += '<span>&nbsp;</span>'
+            } else if (char === '^') {
+              this.element.innerHTML += '<br>'
+            } else {
+              this.element.innerText += char
             }
             index++
-        }
-        else{
+          } else {
             clearInterval(interval);
-        }
-       }, speed)
+            resolve();
+          }
+        }, speed);
+      });
     }
   }
