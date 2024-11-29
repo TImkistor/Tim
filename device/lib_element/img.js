@@ -23,28 +23,16 @@ export default class IMG {
        }
        setTimeout(fadeIn,speed)
     }
-
-    animationRadius(mouse,radius,rotate,side){
-     let currentRotation = rotate
-     let rotationIncrement = 0
-
-     if (side === "right"){
-      rotationIncrement = 1
-     }
-     else{
-      rotationIncrement = -1;
-     }
-
-     const rotateImage = () =>{
-      this.element.style.transform = `rotate(${currentRotation}deg)`
-      currentRotation = rotationIncrement;
-      if (currentRotation < radius){
-        requestAnimationFrame(rotateImage);
-      }
-     }
-
-     this.element.addEventListener(mouse, ()=>{
-     rotateImage()
-     })
-    }
+    AnimationRotate(mouse,side){
+        this.element.addEventListener(mouse,()=>{
+          if ( side === "right"){
+          this.element.style.transition = 'transform 1s'
+          this.element.style.transform = 'rotate(360deg)'
+          }
+          else{
+            this.element.style.transition = 'transform 1s'
+            this.element.style.transform = 'rotate(-360deg)'
+          }
+        })
   }
+}
