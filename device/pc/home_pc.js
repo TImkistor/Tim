@@ -41,7 +41,7 @@ export default function home_pc(){
             div2.element.style.alignItems = "center"
             div2.appendTo(div.element)
 
-            const img1 = new IMG('home_img1','https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png','13%','100%')
+            const img1 = new IMG('home_img1','https://www.rus-anonym.xyz/static/media/ea36da21aaf197498b4f.png','13%','100%')
             img1.element.style.borderRadius = '100%'
             img1.animationAdvent(10)
             img1.AnimationRotate("mouseover","right")
@@ -49,7 +49,7 @@ export default function home_pc(){
             img1.link("click","https://github.com/rus-https")
             img1.appendTo(div2.element)
 
-            const img2 = new IMG('home_img2','https://vk.com/rus_cybersec','13%','100%')
+            const img2 = new IMG('home_img2','https://www.rus-anonym.xyz/static/media/76149e285a5aa89124f2.svg','13%','100%')
             img2.element.style.borderRadius = '100%'
             img2.element.style.marginLeft = "3%"
             img2.animationAdvent(10)
@@ -58,7 +58,7 @@ export default function home_pc(){
             img2.link("click","https://t.me/rus-https")
             img2.appendTo(div2.element)
  
-            const img3 = new IMG('home_img3','https://avatars.mds.yandex.net/i?id=d7b2192f0a02bada544b9cfb22ae1507_l-5161002-images-thumbs&n=13','13%','100%')
+            const img3 = new IMG('home_img3','https://www.rus-anonym.xyz/static/media/18e3dc57f0a7665e6ec7.svg','13%','100%')
             img3.element.style.borderRadius = '100%'
             img3.element.style.marginLeft = "3%"
             img3.animationAdvent(10)
