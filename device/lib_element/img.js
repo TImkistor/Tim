@@ -35,4 +35,9 @@ export default class IMG {
           }
         })
   }
+  link(mouse,link){
+    this.element.addEventListener(mouse,()=> {
+      window.location.href = link;
+      });
+  }
 }

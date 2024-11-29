@@ -46,14 +46,16 @@ export default function home_pc(){
             img1.animationAdvent(10)
             img1.AnimationRotate("mouseover","right")
             img1.AnimationRotate("mouseleave","left")
+            img1.link("click","https://github.com/rus-https")
             img1.appendTo(div2.element)
 
-            const img2 = new IMG('home_img2','https://images.live.vkplay.ru/image/42223324-64bb-4e29-be52-28e622f52ce8?change_time=1713129202&mw=640','13%','100%')
+            const img2 = new IMG('home_img2','https://vk.com/rus_cybersec','13%','100%')
             img2.element.style.borderRadius = '100%'
             img2.element.style.marginLeft = "3%"
             img2.animationAdvent(10)
             img2.AnimationRotate("mouseover","right")
             img2.AnimationRotate("mouseleave","left")
+            img2.link("click","https://t.me/rus-https")
             img2.appendTo(div2.element)
  
             const img3 = new IMG('home_img3','https://avatars.mds.yandex.net/i?id=d7b2192f0a02bada544b9cfb22ae1507_l-5161002-images-thumbs&n=13','13%','100%')
@@ -62,6 +64,7 @@ export default function home_pc(){
             img3.animationAdvent(10)
             img3.AnimationRotate("mouseover","right")
             img3.AnimationRotate("mouseleave","left")
+            img3.link("click","https://vk.com/rus_https")
             img3.appendTo(div2.element)
           })
 }
