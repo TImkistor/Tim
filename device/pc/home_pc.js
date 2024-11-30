@@ -3,8 +3,7 @@ import H1 from '../lib_element/h1.js'
 import IMG from '../lib_element/img.js';
 
 export default function home_pc(){
-        const div = new DIV('home_div','90%',window.innerHeight,'black')
-        div.element.style.marginTop = "5%"
+        const div = new DIV('home_div',"90%",window.innerHeight,'black')
         div.element.style.marginLeft = "5%"
         div.element.style.borderRadius = "10%"
         div.element.style.boxShadow = "0px 0px 20px 5px blue"
@@ -41,7 +40,7 @@ export default function home_pc(){
             div2.element.style.alignItems = "center"
             div2.appendTo(div.element)
 
-            const img1 = new IMG('home_img1','https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png','13%','100%')
+            const img1 = new IMG('home_img1','https://www.rus-anonym.xyz/static/media/ea36da21aaf197498b4f.png','13%','100%')
             img1.element.style.borderRadius = '100%'
             img1.animationAdvent(10)
             img1.AnimationRotate("mouseover","right")

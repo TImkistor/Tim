@@ -3,8 +3,7 @@ import H1 from '../lib_element/h1.js'
 import IMG from '../lib_element/img.js';
 
 export default function home_mob(){
-        const div = new DIV('home_div','90%',window.innerHeight,'black')
-        div.element.style.marginTop = "5%"
+        const div = new DIV('home_div',"90%",window.innerHeight,'black')
         div.element.style.marginLeft = "5%"
         div.element.style.borderRadius = "10%"
         div.element.style.boxShadow = "0px 0px 20px 5px blue"
@@ -15,7 +14,14 @@ export default function home_mob(){
         const h1 = new H1('home_h1','RusAnonymTeam pressent','white','center');
         h1.element.style.fontSize = "60"
         h1.element.style.textShadow = "blue 1px 0 10px"
-        h1.element.style.paddingTop = "40%"
+        console.log(parseInt(div.element.style.height) > 700)
+        console.log(parseInt(div.element.style.height))
+            if (parseInt(div.element.style.height) < 1500){
+                h1.element.style.paddingTop = "10%"
+             }
+             else{
+                h1.element.style.paddingTop = "40%"
+             }
         h1.appendTo(div.element)
         h1.animationShiftText(50)
           .then(() => {
