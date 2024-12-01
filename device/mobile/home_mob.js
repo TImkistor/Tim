@@ -14,8 +14,6 @@ export default function home_mob(){
         const h1 = new H1('home_h1','RusAnonymTeam pressent','white','center');
         h1.element.style.fontSize = "60"
         h1.element.style.textShadow = "blue 1px 0 10px"
-        console.log(parseInt(div.element.style.height) > 700)
-        console.log(parseInt(div.element.style.height))
             if (parseInt(div.element.style.height) < 1500){
                 h1.element.style.paddingTop = "10%"
              }

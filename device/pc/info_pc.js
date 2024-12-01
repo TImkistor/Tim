@@ -110,4 +110,7 @@ export default function info_pc(){
         img3.AnimationRotate("mouseleave","left")
         img3.appendTo(div5.element)
 
+        const div6 = new DIV('info_div3',"90%","40%","green")
+        div6.element.style.marginLeft = "5%"
+        div6.appendTo(div.element)
 }
