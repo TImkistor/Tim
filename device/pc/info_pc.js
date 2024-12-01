@@ -28,6 +28,8 @@ export default function info_pc(){
 
         const img = new IMG('info_img1','https://sun9-77.userapi.com/impg/RwRExZHFyeETot29QAQ7RqhybUlkOLmcB6c1gg/BDqy1h0p1G0.jpg?size=640x640&quality=95&sign=7e357c39ab6fd68cce0dffa41b8b110d&type=album')
         img.element.style.height = "90%"
+        img.element.style.borderRadius = "100%"
+        img.animationAdvent(10)
         img.appendTo(div3.element)
         
         const div4 = new DIV('info_div2',"50%","100%",)
@@ -85,13 +87,27 @@ export default function info_pc(){
         h2.element.style.fontWeight = "normal"
         h2.appendTo(div.element)
 
-        const div5 = new DIV('info_div3',"100%","10%",'blue')
+        const div5 = new DIV('info_div3',"100%","10%")
         div5.element.style.display = "flex"
         div5.element.style.justifyContent = 'center'
         div5.element.style.alignItems = "top"
         div5.appendTo(div.element)
 
-        const div6 = new DIV('info_div3',"100%","30%",'green')
-        div6.appendTo(div.element)
+        const img2 = new IMG('info_img2','https://github.com/rus-https/my-site/blob/main/device/img/js.jpg?raw=true')
+        img2.element.style.height = "100%"
+        img2.element.style.borderRadius = "100%"
+        img2.animationAdvent(10)
+        img2.AnimationRotate("mouseover","right")
+        img2.AnimationRotate("mouseleave","left")
+        img2.appendTo(div5.element)
+
+        const img3 = new IMG('info_img3','https://github.com/rus-https/my-site/blob/main/device/img/ts.png?raw=true')
+        img3.element.style.height = "100%"
+        img3.element.style.marginLeft = "30px"
+        img3.element.style.borderRadius = "100%"
+        img3.animationAdvent(10)
+        img3.AnimationRotate("mouseover","right")
+        img3.AnimationRotate("mouseleave","left")
+        img3.appendTo(div5.element)
 
 }
