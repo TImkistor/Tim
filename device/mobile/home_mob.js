@@ -25,7 +25,7 @@ export default function home_mob(){
         h1.appendTo(div.element)
         h1.animationShiftText(50)
           .then(() => {
-            const h2 = new H1('home_h2', 'Занимаемся раработкой', 'white', 'center');
+            const h2 = new H1('home_h2', 'Занимаемся разработкой', 'white', 'center');
             h2.element.style.fontSize = "60"
             h2.element.style.fontWeight = "normal"
             h2.element.style.textShadow = "blue 1px 0 10px"

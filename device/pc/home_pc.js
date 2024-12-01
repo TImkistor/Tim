@@ -18,7 +18,7 @@ export default function home_pc(){
         h1.appendTo(div.element)
         h1.animationShiftText(50)
           .then(() => {
-            const h2 = new H1('home_h2', 'Занимаемся раработкой web приложений', 'white', 'center');
+            const h2 = new H1('home_h2', 'Занимаемся разработкой web приложений', 'white', 'center');
             h2.element.style.fontSize = "50"
             h2.element.style.fontWeight = "normal"
             h2.element.style.textShadow = "blue 1px 0 10px"
