@@ -6,9 +6,19 @@ import P from '../lib_element/p.js';
 
 export default function info_pc(){
         const div = new DIV('info_div',"50%",window.innerHeight,'black')
-        div.element.style.marginLeft = "25%"
         div.element.style.marginTop = "40px"
         div.element.style.borderRadius = "10%"
+        
+        if (parseInt(div.element.style.height) < 900){
+            div.element.style.height = parseInt(div.element.style.height) * 2
+            div.element.style.width = "90%"
+            div.element.style.marginLeft = "5%"
+         }
+         else{
+            div.element.style.width = "50%"
+            div.element.style.marginLeft = "25%"
+         }
+
         div.element.style.boxShadow = "0px 0px 20px 5px blue"
         div.animationShadow('mouseover','0px 5px 100px 10px blue')
         div.animationShadow('mouseleave','0px 0px 20px 5px blue')
@@ -33,6 +43,10 @@ export default function info_pc(){
         img.appendTo(div3.element)
         
         const div4 = new DIV('info_div2',"50%","100%",)
+        div4.element.style.display ="flex"
+        div4.element.style.flexDirection ="column"
+        div4.element.style.overflowY = "auto";
+        div4.element.style.maxHeight = "100vh";
         div4.appendTo(div2.element)
         
         const p1 = new P()
@@ -98,6 +112,30 @@ export default function info_pc(){
         img2.element.style.borderRadius = "100%"
         img2.animationAdvent(10)
         img2.AnimationRotate("mouseover","right")
+
+        img2.element.addEventListener("mouseover", ()=>{
+            div6.element.innerHTML = ""
+            const textStorage = ["<b>·</b> Понимание основных конпцепций javaScript",
+                "<b>·</b> Умение работать с массивами и объектами, осуществлять доступ к их элементам и модификацию данных",
+                "<b>·</b> Понимания работы с колекциями данных, использую методы массивов(map, filter, reduce и.т.д)",
+                "<b>·</b> Умения работать с асинхронам кодом, использовать проммисы и async/await для управления аснихронами операциями",
+                "<b>·</b> Знания работы DOM, умения создавать, модифицировать и управлять элементами на странице, добовлять обработчики событий",
+                "<b>·</b> Умения работать c AJAX запросами, отпровлять и получать данные сервера",
+                "<b>·</b> Умения отслеживать код с помощью инструментов браузера (DevTools) и умения использовать различные методы дебага",
+                "<b>·</b> Знания основных принцопов ООП в JavaScript, умения использовать классы и наследование",
+                "<b>·</b> Умения писать чистый и эффективный код, следую принципам DRY(Don`t Repeat Yourself) и SOLID"
+
+            ]
+            textStorage.forEach((text) =>{
+                const p1 = new P()
+                p1.element.innerHTML = text
+                p1.element.style.color = "white"
+                p1.element.style.textAlign = "left"
+                p1.animationAdvent(10)
+                p1.appendTo(div6.element)
+            })
+        })
+
         img2.AnimationRotate("mouseleave","left")
         img2.appendTo(div5.element)
 
@@ -107,10 +145,34 @@ export default function info_pc(){
         img3.element.style.borderRadius = "100%"
         img3.animationAdvent(10)
         img3.AnimationRotate("mouseover","right")
+
+        img3.element.addEventListener("mouseover", ()=>{
+            div6.element.innerHTML = ""
+            const textStorage = ["<b>·</b> Понимание основных конпцепций typeScript",
+                "<b>·</b> Умение работать с массивами и объектами, осуществлять доступ к их элементам и модификацию данных",
+                "<b>·</b> Понимания работы с колекциями данных, использую методы массивов(map, filter, reduce и.т.д)",
+                "<b>·</b> Умения работать с асинхронам кодом, использовать проммисы и async/await для управления аснихронами операциями",
+                "<b>·</b> Знания работы DOM, умения создавать, модифицировать и управлять элементами на странице, добовлять обработчики событий",
+                "<b>·</b> Умения работать c AJAX запросами, отпровлять и получать данные сервера",
+                "<b>·</b> Умения отслеживать код с помощью инструментов браузера (DevTools) и умения использовать различные методы дебага",
+                "<b>·</b> Знания основных принцопов ООП в typeScript, умения использовать классы и наследование",
+                "<b>·</b> Умения писать чистый и эффективный код, следую принципам DRY(Don`t Repeat Yourself) и SOLID"
+
+            ]
+            textStorage.forEach((text) =>{
+                const p1 = new P()
+                p1.element.innerHTML = text
+                p1.element.style.color = "white"
+                p1.element.style.textAlign = "left"
+                p1.animationAdvent(10)
+                p1.appendTo(div6.element)
+            })
+        })
+
         img3.AnimationRotate("mouseleave","left")
         img3.appendTo(div5.element)
 
-        const div6 = new DIV('info_div3',"90%","40%","green")
+        const div6 = new DIV('info_div4',"90%","40%")
         div6.element.style.marginLeft = "5%"
         div6.appendTo(div.element)
 }
