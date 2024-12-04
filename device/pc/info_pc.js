@@ -127,12 +127,12 @@ export default function info_pc(){
 
             ]
             textStorage.forEach((text) =>{
-                const p1 = new P()
-                p1.element.innerHTML = text
-                p1.element.style.color = "white"
-                p1.element.style.textAlign = "left"
-                p1.animationAdvent(10)
-                p1.appendTo(div6.element)
+                const p2 = new P()
+                p2.element.innerHTML = text
+                p2.element.style.color = "white"
+                p2.element.style.textAlign = "left"
+                p2.animationAdvent(10)
+                p2.appendTo(div6.element)
             })
         })
 
@@ -174,5 +174,9 @@ export default function info_pc(){
 
         const div6 = new DIV('info_div4',"90%","40%")
         div6.element.style.marginLeft = "5%"
+        div6.element.style.display ="flex"
+        div6.element.style.flexDirection ="column"
+        div6.element.style.overflowY = "auto";
+        div6.element.style.maxHeight = "100vh";
         div6.appendTo(div.element)
 }

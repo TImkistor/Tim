@@ -163,5 +163,9 @@ export default function info_mob(){
 
         const div6 = new DIV('info_div3',"90%","40%")
         div6.element.style.marginLeft = "5%"
+        div6.element.style.display ="flex"
+        div6.element.style.flexDirection ="column"
+        div6.element.style.overflowY = "auto";
+        div6.element.style.maxHeight = "100vh";
         div6.appendTo(div.element)
 }
