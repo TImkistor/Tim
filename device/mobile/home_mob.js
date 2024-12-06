@@ -53,7 +53,7 @@ export default function home_mob(){
             div2.element.style.alignItems = "center"
             div2.appendTo(div.element)
 
-            const img1 = new IMG('home_img1','https://www.rus-anonym.xyz/static/media/ea36da21aaf197498b4f.png','180px','180px')
+            const img1 = new IMG('home_img1','https://github.com/rus-https/my-site/blob/main/device/img/github.png?raw=true','180px','180px')
             img1.element.style.borderRadius = '100%'
             img1.element.style.position = "realitive"
             img1.animationAdvent(10)
@@ -62,17 +62,17 @@ export default function home_mob(){
             img1.link("click","https://github.com/rus-https")
             img1.appendTo(div2.element)
 
-            const img2 = new IMG('home_img2','https://www.rus-anonym.xyz/static/media/76149e285a5aa89124f2.svg','180px','180px')
+            const img2 = new IMG('home_img2','https://github.com/rus-https/my-site/blob/main/device/img/telegram.png?raw=true','180px','180px')
             img2.element.style.borderRadius = '100%'
             img2.element.style.position = "realitive"
             img2.element.style.marginTop = "10%"
             img2.animationAdvent(10)
             img2.AnimationRotate("mouseover","right")
             img2.AnimationRotate("mouseleave","left")
-            img2.link("click","https://t.me/rus-https")
+            img2.link("click","https://t.me/Rus_Https")
             img2.appendTo(div2.element)
  
-            const img3 = new IMG('home_img3','https://www.rus-anonym.xyz/static/media/18e3dc57f0a7665e6ec7.svg','180px','180px')
+            const img3 = new IMG('home_img3','https://github.com/rus-https/my-site/blob/main/device/img/vk.png?raw=true','180px','180px')
             img3.element.style.borderRadius = '100%'
             img3.element.style.position = "realitive"
             img3.element.style.marginTop = "10%"
